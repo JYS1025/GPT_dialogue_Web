@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@700&display=swap');
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  font-family: Arial, sans-serif; /* 기본 폰트 설정 */
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.body {
+  flex-grow:1; 
+  background-color:#ffffff; 
+  padding:20px; 
+  overflow:auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+   background-color:#f8f9fa;
+   padding:20px;
+   text-align:center;  
+}
+
+.text, .voice, .record, .stop {
+  padding: 10px;
+  cursor: pointer;
+  color: #4283fa;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+}
+.menu, .save, .record, .stop{
+  width: 48px;
+  height: 48px;
+  color: #61677c;
+  border: none;
+  outline: none;
+  background: #ebecf000;
+  cursor: pointer;
+  margin: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;  
+  padding:2px;
+  font-size : 40px;
+}
+.text, .voice {
+  margin-bottom :15px ; /* 버튼과 입력창 사이의 간격 조정 */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e5e5ea;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-family: 'Kay Pho Du', serif;
+  flex-grow: 1;
+  text-align: center;
+  color: #4283fa;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+
+.menu:hover, .save:hover {
+  color: #4283fa;
+}
+
+
+.chatbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.mychatbox {
+  align-self: flex-end;
+  background-color: #248bf5;
+  color: #fff;
+  border-radius: 1.15rem;
+  line-height: 1.25;
+  max-width: 75%;
+  padding: 0.5rem .875rem;
+  position: relative;
+  word-wrap: break-word;
+  margin: 0.5rem 0;
+  width: fit-content;
+}
+
+.mychatbox::before {
+  border-bottom-left-radius: 0.8rem 0.7rem;
+  border-right: 1rem solid #248bf5;
+  right: -0.35rem;
+  transform: translate(0, -0.1rem);
+  bottom: -0.1rem;
+  content: "";
+  height: 1rem;
+  position: absolute;
+}
+
+.mychatbox::after {
+  background-color: #fff;
+  border-bottom-left-radius: 0.5rem;
+  right: -40px;
+  transform:translate(-30px, -2px);
+  width: 10px;
+  bottom: -0.1rem;
+  content: "";
+  height: 1rem;
+  position: absolute;
+}
+
+.aichatbox {
+  align-items: flex-start;
+  background-color: #e5e5ea;
+  color: #000;
+  border-radius: 1.15rem;
+  line-height: 1.25;
+  max-width: 75%;
+  padding: 0.5rem .875rem;
+  position: relative;
+  word-wrap: break-word;
+  margin: 0.5rem 0;
+  width: fit-content;
+}
+
+.aichatbox::before {
+  border-bottom-right-radius: 0.8rem 0.7rem;
+  border-left: 1rem solid #e5e5ea;
+  left: -0.35rem;
+  transform: translate(0, -0.1rem);
+  bottom: -0.1rem;
+  content: "";
+  height: 1rem;
+  position: absolute;
+}
+
+.aichatbox::after {
+  background-color: #ffffff;
+  border-bottom-right-radius: 0.5rem;
+  left: 20px;
+  transform: translate(-30px, -2px);
+  width: 10px;
+  bottom: -0.1rem;
+  content: "";
+  height: 1rem;
+  position: absolute;
+}
+
+.textinput {
+  padding: 10px;
+  width: 80%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  outline: none;
+}
+
+.send {
+  padding: 10px 20px;
+  background-color: #4283fa;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.send:hover {
+  background-color: #3166c6;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
